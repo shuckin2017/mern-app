@@ -7,10 +7,7 @@
     "start": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm start\" \"npm run client\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gitAdd": "git add .",
-    "gitCommit": "git commit -m 'initel'",
-    "gitPush": "git push"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
