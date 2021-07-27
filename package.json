@@ -2,8 +2,11 @@
   "name": "spa-mern",
   "version": "1.0.0",
   "description": "Single Page Application in MERN stack",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +26,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.3",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "yarn": "^1.22.11"
   }
 }
